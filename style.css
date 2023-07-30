@@ -20,8 +20,8 @@ body {
 .coin {
   display: flex;
   width: 100%;
-  max-width: 800px; /* Increased max-width to fit the card content */
-  height: 100px; /* Increased height to accommodate content */
+  max-width: 1000px; /* Increased max-width to fit the card content */
+  height: 120px; /* Increased height to accommodate content */
   border-radius: 8px;
   margin: 38px 10px;
   background-color: #000000;
@@ -76,7 +76,7 @@ body {
 }
 
 .coin .coin-price .price {
-  font-size: 20px; /* Further reduced font size for mobile */
+  font-size: 24px; /* Further reduced font size for mobile */
   font-weight: 700;
   color: #30ff20; /* Set the price color to green */
   line-height: 1; /* Ensures the price text doesn't break */
@@ -84,7 +84,7 @@ body {
 
 .coin .coin-price .change {
   color: #b6b6b6;
-  font-size: 10px; /* Further reduced font size for mobile */
+  font-size: 12px; /* Further reduced font size for mobile */
   font-weight: 600;
   margin-top: 4px; /* Increased spacing between price and change text */
 }
@@ -101,7 +101,7 @@ body {
   }
   
   .coin .coin-price .price {
-    font-size: 18px; /* Further reduced font size for mobile */
+    font-size: 20px; /* Further reduced font size for mobile */
   }
   
   .coin .coin-price .change {
@@ -121,7 +121,7 @@ body {
   }
   
   .coin .coin-price .price {
-    font-size: 16px; /* Further reduced font size for Portuguese */
+    font-size: 18px; /* Further reduced font size for Portuguese */
   }
   
   .coin .coin-price .change {
