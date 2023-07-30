@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+/* ... Previous CSS code ... */
 
 body {
     min-height: 140vh;
@@ -19,19 +20,22 @@ body {
   
   .container {
     display: flex;
-    flex-wrap: wrap; /* Allow the children to wrap to the next row */
-    justify-content: center; /* Center the children horizontally */
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .coin {
-    display: flex;
-    width: 280px;
-    max-width: 400px; /* Set a maximum width for each coin card */
-    height: 120px; /* Increased height to accommodate content */
+    flex: 1; /* Let the coin cards take up the available space */
+    min-width: 280px; /* Set a suitable minimum width for each coin card */
+    max-width: 400px;
+    height: 120px;
     border-radius: 8px;
     margin: 38px 10px;
     background-color: #000000;
   }
+  
+  /* ... The rest of your CSS code ... */
+  
   
 .coin .coin-logo {
   flex: 1;
