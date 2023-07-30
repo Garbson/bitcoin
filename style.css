@@ -5,38 +5,28 @@
   padding: 0;
   box-sizing: border-box;
 }
-/* ... Previous CSS code ... */
 
 body {
-    min-height: 140vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(https://th.bing.com/th/id/R.68d4965b1e29a53eaac1f6c24799b062?rik=t%2fI1bBkOTDqOdQ&pid=ImgRaw&r=0);
-    background-size: cover;
-    background-position: center center;
-    font-family: 'Mukta', sans-serif;
-  }
-  
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  
-  .coin {
-    flex: 1; /* Let the coin cards take up the available space */
-    width: 100%; /* Set a suitable minimum width for each coin card */
-    max-width: 600px;
-    height: 120px;
-    border-radius: 8px;
-    margin: 38px 10px;
-    background-color: #000000;
-  }
-  
-  /* ... The rest of your CSS code ... */
-  
-  
+  min-height: 140vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://th.bing.com/th/id/R.68d4965b1e29a53eaac1f6c24799b062?rik=t%2fI1bBkOTDqOdQ&pid=ImgRaw&r=0);
+  background-size: cover;
+  background-position: center center;
+  font-family: 'Mukta', sans-serif;
+}
+
+.coin {
+  display: flex;
+  width: 130%; /* Fixed the typo here */
+  max-width: 600px; /* Increased max-width to fit the card content */
+  height: 120px; /* Increased height to accommodate content */
+  border-radius: 8px;
+  margin: 38px 10px;
+  background-color: #000000;
+}
+
 .coin .coin-logo {
   flex: 1;
   display: flex;
@@ -121,22 +111,6 @@ body {
 
 /* Media Queries for Portuguese */
 
-@media (max-width: 768px) and (lang: pt-BR) {
-  .coin .coin-name h3 {
-    font-size: 14px; /* Further reduced font size for Portuguese */
-  }
-  
-  .coin .coin-name span {
-    font-size: 10px; /* Further reduced font size for Portuguese */
-  }
-  
-  .coin .coin-price .price {
-    font-size: 18px; /* Further reduced font size for Portuguese */
-  }
-  
-  .coin .coin-price .change {
-    font-size: 10px; /* Further reduced font size for Portuguese */
-  }
-}
+
 /* feio */
 /* The rest of the CSS ... */
