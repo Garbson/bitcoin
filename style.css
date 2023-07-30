@@ -48,8 +48,8 @@ body {
 .coin .coin-name {
   flex: 1;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  flex-direction: column; /* Adjusted to stack name and symbol */
+  justify-content: center; /* Center vertically */
   padding-left: 10px;
 }
 
@@ -57,34 +57,35 @@ body {
   color: #fff;
   font-size: 18px;
   text-transform: uppercase;
+  margin-bottom: 2px; /* Add some spacing between name and symbol */
 }
 
 .coin .coin-name span {
   color: #aaa;
   font-size: 14px;
   font-weight: 500;
-  margin-left: 2px;
 }
 
 .coin .coin-price {
   flex: 1;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
+  flex-direction: column; /* Adjusted to stack price and change */
+  align-items: flex-end; /* Align to the right */
+  justify-content: center; /* Center vertically */
   padding-right: 10px;
 }
 
 .coin .coin-price .price {
-  font-size: 24px;
+  font-size: 22px; /* Reduced font size for mobile */
   font-weight: 700;
   color: #30ff20; /* Set the price color to green */
 }
 
 .coin .coin-price .change {
   color: #b6b6b6;
-  font-size: 16px;
+  font-size: 14px; /* Reduced font size for mobile */
   font-weight: 600;
-  margin-top: 6px;
+  margin-top: 2px; /* Add some spacing above the change text */
 }
 
 /* Media Queries */
@@ -103,7 +104,7 @@ body {
   }
   
   .coin .coin-price .change {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 
