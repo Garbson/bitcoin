@@ -20,7 +20,7 @@ body {
 .coin {
   display: flex;
   width: 100%;
-  max-width: 500px; /* Increased max-width to fit the green price */
+  max-width: 700px; /* Increased max-width to fit the green price */
   height: 80px;
   border-radius: 8px;
   margin: 38px 10px;
