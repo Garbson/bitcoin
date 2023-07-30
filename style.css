@@ -108,16 +108,24 @@ body {
   }
 }
 
-@media (max-width: 768px) and (lang: pt-BR) {
-    .coin .coin-price .price {
-      font-size: 16px;
-    }
-    
-    .coin .coin-price .change {
-      font-size: 12px;
-    }
-  }
+/* Media Queries for Portuguese */
 
-/* Add more media queries as needed for other screen sizes */
+@media (max-width: 768px) and (lang: pt-BR) {
+  .coin .coin-name h3 {
+    font-size: 14px;
+  }
+  
+  .coin .coin-name span {
+    font-size: 10px;
+  }
+  
+  .coin .coin-price .price {
+    font-size: 16px;
+  }
+  
+  .coin .coin-price .change {
+    font-size: 10px;
+  }
+}
 
 /* The rest of the CSS ... */
