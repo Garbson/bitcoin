@@ -7,26 +7,32 @@
 }
 
 body {
-  min-height: 140vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(https://th.bing.com/th/id/R.68d4965b1e29a53eaac1f6c24799b062?rik=t%2fI1bBkOTDqOdQ&pid=ImgRaw&r=0);
-  background-size: cover;
-  background-position: center center;
-  font-family: 'Mukta', sans-serif;
-}
-
-.coin {
-  display: flex;
-  width: 100%; /* Fixed the typo here */
-  max-width: 1200px; /* Increased max-width to fit the card content */
-  height: 120px; /* Increased height to accommodate content */
-  border-radius: 8px;
-  margin: 38px 10px;
-  background-color: #000000;
-}
-
+    min-height: 140vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://th.bing.com/th/id/R.68d4965b1e29a53eaac1f6c24799b062?rik=t%2fI1bBkOTDqOdQ&pid=ImgRaw&r=0);
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Mukta', sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* Allow the children to wrap to the next row */
+    justify-content: center; /* Center the children horizontally */
+  }
+  
+  .coin {
+    display: flex;
+    width: 100%;
+    max-width: 400px; /* Set a maximum width for each coin card */
+    height: 120px; /* Increased height to accommodate content */
+    border-radius: 8px;
+    margin: 38px 10px;
+    background-color: #000000;
+  }
+  
 .coin .coin-logo {
   flex: 1;
   display: flex;
