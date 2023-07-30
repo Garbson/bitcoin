@@ -70,9 +70,9 @@ body {
   flex: 1;
   display: flex;
   flex-direction: column; /* Adjusted to stack price and change */
-  align-items: flex-end; /* Align to the right */
+  align-items: flex-start; /* Align to the left for pt-BR */
   justify-content: center; /* Center vertically */
-  padding-right: 10px;
+  padding-left: 10px; /* Add some left padding */
 }
 
 .coin .coin-price .price {
@@ -113,7 +113,7 @@ body {
 
 @media (max-width: 768px) and (lang: pt-BR) {
   .coin .coin-name h3 {
-    font-size: 14px; /* Further reduced font size for Portuguese */
+    font-size: 12px; /* Further reduced font size for Portuguese */
   }
   
   .coin .coin-name span {
@@ -121,12 +121,13 @@ body {
   }
   
   .coin .coin-price .price {
-    font-size: 16px; /* Further reduced font size for Portuguese */
+    font-size: 14px; /* Further reduced font size for Portuguese */
+    margin-left: 4px; /* Slightly moved to the left to prevent breaking */
   }
   
   .coin .coin-price .change {
     font-size: 10px; /* Further reduced font size for Portuguese */
   }
 }
-/* feio */
+
 /* The rest of the CSS ... */
