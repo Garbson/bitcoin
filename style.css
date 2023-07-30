@@ -1,10 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;400;500;600;700&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* ... Previous CSS code ... */
 
 body {
     min-height: 140vh;
@@ -19,120 +13,19 @@ body {
   
   .container {
     display: flex;
-    flex-wrap: wrap; /* Allow the children to wrap to the next row */
-    justify-content: center; /* Center the children horizontally */
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   .coin {
-    display: flex;
-    width: 100%;
-    max-width: 400px; /* Set a maximum width for each coin card */
-    height: 120px; /* Increased height to accommodate content */
+    flex: 1; /* Let the coin cards take up the available space */
+    min-width: 280px; /* Set a suitable minimum width for each coin card */
+    max-width: 400px;
+    height: 120px;
     border-radius: 8px;
     margin: 38px 10px;
     background-color: #000000;
   }
   
-.coin .coin-logo {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.coin .coin-logo img {
-  max-width: 60px;
-  max-height: 60px;
-}
-
-.coin .coin-details {
-  flex: 3;
-  display: flex;
-  align-items: center;
-}
-
-.coin .coin-name {
-  flex: 1;
-  display: flex;
-  flex-direction: column; /* Adjusted to stack name and symbol */
-  justify-content: center; /* Center vertically */
-  padding-left: 10px;
-}
-
-.coin .coin-name h3 {
-  color: #fff;
-  font-size: 18px;
-  text-transform: uppercase;
-  margin-bottom: 2px; /* Add some spacing between name and symbol */
-}
-
-.coin .coin-name span {
-  color: #aaa;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.coin .coin-price {
-  flex: 1;
-  display: flex;
-  flex-direction: column; /* Adjusted to stack price and change */
-  align-items: flex-end; /* Align to the right */
-  justify-content: center; /* Center vertically */
-  padding-right: 10px;
-}
-
-.coin .coin-price .price {
-  font-size: 24px; /* Further reduced font size for mobile */
-  font-weight: 700;
-  color: #30ff20; /* Set the price color to green */
-  line-height: 1; /* Ensures the price text doesn't break */
-}
-
-.coin .coin-price .change {
-  color: #b6b6b6;
-  font-size: 12px; /* Further reduced font size for mobile */
-  font-weight: 600;
-  margin-top: 4px; /* Increased spacing between price and change text */
-}
-
-/* Media Queries */
-
-@media (max-width: 768px) {
-  .coin .coin-name h3 {
-    font-size: 16px;
-  }
+  /* ... The rest of your CSS code ... */
   
-  .coin .coin-name span {
-    font-size: 12px;
-  }
-  
-  .coin .coin-price .price {
-    font-size: 20px; /* Further reduced font size for mobile */
-  }
-  
-  .coin .coin-price .change {
-    font-size: 10px; /* Further reduced font size for mobile */
-  }
-}
-
-/* Media Queries for Portuguese */
-
-@media (max-width: 768px) and (lang: pt-BR) {
-  .coin .coin-name h3 {
-    font-size: 14px; /* Further reduced font size for Portuguese */
-  }
-  
-  .coin .coin-name span {
-    font-size: 10px; /* Further reduced font size for Portuguese */
-  }
-  
-  .coin .coin-price .price {
-    font-size: 18px; /* Further reduced font size for Portuguese */
-  }
-  
-  .coin .coin-price .change {
-    font-size: 10px; /* Further reduced font size for Portuguese */
-  }
-}
-/* feio */
-/* The rest of the CSS ... */
