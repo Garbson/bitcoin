@@ -120,11 +120,11 @@ body {
   }
   
   .coin .coin-price .price {
-    font-size: 16px;
+    font-size: 18px; /* Further reduced font size for Portuguese */
   }
   
   .coin .coin-price .change {
-    font-size: 10px;
+    font-size: 10px; /* Further reduced font size for Portuguese */
   }
 }
 
