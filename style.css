@@ -81,18 +81,25 @@ body {
 
 /* Media Queries */
 
-@media (max-width: 768px) {
-  /* Styles for devices with a maximum width of 768px (e.g., tablets) */
-  .coin {
-    height: 60px;
-    margin: 20px 10px;
+@media (max-width: 1200px) {
+  .coin .coin-name h3 {
+    font-size: 5vw;
   }
   
-  .coin .coin-logo img {
-    width: 60%;
-    height: 60%;
+  .coin .coin-name span {
+    font-size: 2.5vw;
   }
   
+  .coin .coin-price .price {
+    font-size: 5vw;
+  }
+  
+  .coin .coin-price .change {
+    font-size: 2vw;
+  }
+}
+
+@media (max-width: 992px) {
   .coin .coin-name h3 {
     font-size: 6vw;
   }
@@ -106,24 +113,28 @@ body {
   }
   
   .coin .coin-price .change {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .coin .coin-name h3 {
+    font-size: 8vw;
+  }
+  
+  .coin .coin-name span {
+    font-size: 4vw;
+  }
+  
+  .coin .coin-price .price {
+    font-size: 8vw;
+  }
+  
+  .coin .coin-price .change {
     font-size: 3vw;
   }
 }
 
 /* Add more media queries as needed for other screen sizes */
 
-.coin.rising {
-  background: linear-gradient(90deg, #202022, #4eb64510);
-}
-
-.coin.rising .coin-price .price {
-  color: #30ff20;
-}
-
-.coin.falling {
-  background: linear-gradient(90deg, #000000, #aa444425);
-}
-
-.coin.falling .coin-price .price {
-  color: #000000;
-}
+/* The rest of the CSS ... */
