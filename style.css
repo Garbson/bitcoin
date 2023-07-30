@@ -76,16 +76,17 @@ body {
 }
 
 .coin .coin-price .price {
-  font-size: 22px; /* Reduced font size for mobile */
+  font-size: 20px; /* Further reduced font size for mobile */
   font-weight: 700;
   color: #30ff20; /* Set the price color to green */
+  line-height: 1; /* Ensures the price text doesn't break */
 }
 
 .coin .coin-price .change {
   color: #b6b6b6;
-  font-size: 14px; /* Reduced font size for mobile */
+  font-size: 10px; /* Further reduced font size for mobile */
   font-weight: 600;
-  margin-top: 2px; /* Add some spacing above the change text */
+  margin-top: 4px; /* Increased spacing between price and change text */
 }
 
 /* Media Queries */
@@ -100,11 +101,11 @@ body {
   }
   
   .coin .coin-price .price {
-    font-size: 20px;
+    font-size: 18px; /* Further reduced font size for mobile */
   }
   
   .coin .coin-price .change {
-    font-size: 12px;
+    font-size: 10px; /* Further reduced font size for mobile */
   }
 }
 
@@ -112,15 +113,15 @@ body {
 
 @media (max-width: 768px) and (lang: pt-BR) {
   .coin .coin-name h3 {
-    font-size: 14px;
+    font-size: 14px; /* Further reduced font size for Portuguese */
   }
   
   .coin .coin-name span {
-    font-size: 10px;
+    font-size: 10px; /* Further reduced font size for Portuguese */
   }
   
   .coin .coin-price .price {
-    font-size: 18px; /* Further reduced font size for Portuguese */
+    font-size: 16px; /* Further reduced font size for Portuguese */
   }
   
   .coin .coin-price .change {
