@@ -19,7 +19,7 @@ body {
 
 .coin {
   display: flex;
-  width: 100wh;
+  width: 100%; /* Fixed the typo here */
   max-width: 1200px; /* Increased max-width to fit the card content */
   height: 120px; /* Increased height to accommodate content */
   border-radius: 8px;
