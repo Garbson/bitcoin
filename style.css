@@ -29,109 +29,81 @@ body {
 
 .coin .coin-logo {
   flex: 1;
-  display: grid;
-  place-items: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .coin .coin-logo img {
-  width: 70%;
-  height: 70%;
+  max-width: 60px;
+  max-height: 60px;
+}
+
+.coin .coin-details {
+  flex: 3;
+  display: flex;
+  align-items: center;
 }
 
 .coin .coin-name {
-  flex: 2;
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  padding-left: 10px;
 }
 
 .coin .coin-name h3 {
   color: #fff;
-  font-size: 4vw; /* Responsive font size */
+  font-size: 18px;
   text-transform: uppercase;
 }
 
 .coin .coin-name span {
   color: #aaa;
-  font-size: 2vw; /* Responsive font size */
+  font-size: 14px;
   font-weight: 500;
   margin-left: 2px;
 }
 
 .coin .coin-price {
   flex: 1;
-  display: grid;
-  align-items: center;
-  text-align: right;
-  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 10px;
 }
 
 .coin .coin-price .price {
-  font-size: 4vw; /* Responsive font size */
+  font-size: 24px;
   font-weight: 700;
-  margin-top: -6px;
+  color: #30ff20; /* Set the price color to green */
 }
 
 .coin .coin-price .change {
   color: #b6b6b6;
-  font-size: 2vw; /* Responsive font size */
+  font-size: 16px;
   font-weight: 600;
-  margin-top: -30px;
+  margin-top: 6px;
 }
 
 /* Media Queries */
 
-@media (max-width: 1200px) {
-  .coin .coin-name h3 {
-    font-size: 5vw;
-  }
-  
-  .coin .coin-name span {
-    font-size: 2.5vw;
-  }
-  
-  .coin .coin-price .price {
-    font-size: 5vw;
-  }
-  
-  .coin .coin-price .change {
-    font-size: 2vw;
-  }
-}
-
-@media (max-width: 992px) {
-  .coin .coin-name h3 {
-    font-size: 6vw;
-  }
-  
-  .coin .coin-name span {
-    font-size: 3vw;
-  }
-  
-  .coin .coin-price .price {
-    font-size: 6vw;
-  }
-  
-  .coin .coin-price .change {
-    font-size: 2.5vw;
-  }
-}
-
 @media (max-width: 768px) {
   .coin .coin-name h3 {
-    font-size: 8vw;
+    font-size: 16px;
   }
   
   .coin .coin-name span {
-    font-size: 4vw;
+    font-size: 12px;
   }
   
   .coin .coin-price .price {
-    font-size: 8vw;
+    font-size: 20px;
   }
   
   .coin .coin-price .change {
-    font-size: 3vw;
+    font-size: 14px;
   }
 }
 
